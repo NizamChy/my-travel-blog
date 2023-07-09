@@ -4,10 +4,12 @@
 }
 header {
   display: flex;
+  width: auto;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0,0,0, 0.1); */
   align-items: center;
+  justify-content: space-around;
 }
 
 .logo img {
@@ -26,6 +28,7 @@ header {
 } */
 .nav-menu a{
   text-decoration: none;
+  /* font-weight: 900; */
   color: #333;
   font-family: 'Bitter', serif;
   font-size: 1.6rem;
@@ -33,6 +36,7 @@ header {
 }
 .nav-menu a:hover{
   color: #ff7f50;
+   font-weight: 900;
 }
 .blog-content{
   position: relative;
@@ -42,20 +46,24 @@ header {
 .blog-content img{
   position: absolute;
   top: 0;
-  left: 0;
+  /* right: 0%; */
+  right: 17%;
   width: 100%;
   height: 100%;
   object-fit:contain;
-  opacity: 0.8;;
+  /* opacity: 0.8; */
+  
 }
 .blogs{
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%; 
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%); */
+  top: 40%;
+  left: 60%;
   text-align: center;
-  color: #fff;
-  
+  align-items: center;
+  margin-bottom: 10px;
 }
 .blog-content h1{
   font-family: 'Bitter', serif;
@@ -66,4 +74,19 @@ header {
   font-family: 'Bitter', serif;
   font-size: 1.2rem;
   color: #333;
+  margin: 10px;
+}
+.explore-button{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 7px;
+  font-family: 'Bitter', serif;
+}
+.explore-button:hover{
+  background-color: #333;
+  transition: all ease 0.3s;
 }
